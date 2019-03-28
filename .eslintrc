@@ -1,0 +1,46 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "env": {
+        "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "eol-last": [2],
+    "no-trailing-spaces" : [2],
+    "keyword-spacing": [
+      2,
+      {}
+    ],
+    "camelcase": [
+      1,
+      {
+        "properties": "always"
+      }
+    ],
+    "max-len": [
+      2,
+      100
+    ],
+    "comma-spacing": [
+      2,
+      { "before": false, "after": true }
+    ],
+    "space-infix-ops": [
+      2,
+     {"int32Hint": true}
+    ]
+  },
+  "overrides": [
+        {
+            "files": [ "test/**/*.js" ],
+            "env": { "mocha": true },
+            "rules": {
+                "max-nested-callbacks": [ "error", 8 ]
+            }
+        }
+    ]
+}
