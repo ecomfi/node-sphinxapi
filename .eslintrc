@@ -31,8 +31,9 @@
     ],
     "space-infix-ops": [
       2,
-     {"int32Hint": true}
-    ]
+     {"int32Hint": false}
+    ],
+    "key-spacing": [ 2, {"beforeColon": false, "afterColon": true}]
   },
   "overrides": [
         {
